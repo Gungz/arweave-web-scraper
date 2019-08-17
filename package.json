@@ -5,17 +5,29 @@
     "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
+    "arweave": "^1.4.1",
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
     "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "react-dom": "^16.8.3",
+    "react-redux": "^7.1.0",
+    "react-redux-form": "^1.16.14",
+    "react-render-html": "^0.6.0",
+    "reactstrap": "^8.0.1",
+    "redux": "^4.0.4",
+    "redux-form": "^8.2.6"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
+    "file-loader": "^4.2.0",
+    "font-awesome-sass-loader": "^2.0.1",
     "html-webpack-inline-source-plugin": "0.0.10",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^0.23.1",
+    "url-loader": "^2.1.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.1"

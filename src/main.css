@@ -1,3 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+} 
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+.spaceLeftRight {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.marginTop-1Pct {
+  margin-top: 1%;
+}
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+  background-color: #fff;
+  text-align: center;
 }
