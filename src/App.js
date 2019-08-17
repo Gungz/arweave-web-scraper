@@ -70,6 +70,8 @@ export default () => {
         if(address!=null){
             refreshBalance();
             refreshDocList();
+        }else{
+            toggleDocList(false);
         }
     }, [address]);
 
@@ -77,7 +79,7 @@ export default () => {
         <div>
             <GlobalLoader globalLoaderVisible={globalLoaderVisible} />
             <Header />
-            <Login address={address} setAddress={setAddress} setJwk={setJwk} balance={balance} />
+            <Login address={address} setAddress={setAddress} setJwk={setJwk} balance={balance} transactionId={transactionId} />
             <Scrape address={address} jwk={jwk} toggleDocList={toggleDocList} refreshDocList={refreshDocList} setGlobalLoaderVisible={setGlobalLoaderVisible} setTransactionId={setTransactionId} transactionId={transactionId} />
             <TransactionStatus transactionId={transactionId} refreshDocList={refreshDocList} setTransactionId={setTransactionId} refreshBalance={refreshBalance} />
             <DocumentList documentList={docList.documentList} loading={docList.loadProgress} visible={docList.visible} />

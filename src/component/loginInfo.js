@@ -11,7 +11,7 @@ export default (props) => {
                 <p>Your address is {props.address}, your balance is {props.balance} AR</p>
             </div>
             <div className="row">
-                <p>Click <a href="#" onClick={(e) => {e.preventDefault(); props.setAddress(null);}}>here</a> to change address</p>            
+                <p>Click <a href="#" onClick={(e) => {e.preventDefault(); if(props.transactionId=="") {props.setAddress(null)} else {alert("Can't change address while transaction is pending")};}}>here</a> to change address</p>            
             </div>
         </div>
     );
